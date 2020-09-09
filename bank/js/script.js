@@ -31,6 +31,10 @@ range1.noUiSlider.on('update', function (values, handle) {
    value1.value = Math.trunc(values[handle]);
 });
 
+value1.addEventListener('change', function () {
+   range1.noUiSlider.set(this.value);
+});
+
 noUiSlider.create(range2, {
    start: 300000,
    connect: 'lower',
@@ -38,6 +42,10 @@ noUiSlider.create(range2, {
       'min': 1000,
       'max': 3000000
    }
+});
+
+value2.addEventListener('change', function () {
+   range2.noUiSlider.set(this.value);
 });
 
 range2.noUiSlider.on('update', function (values, handle) {
