@@ -48,11 +48,11 @@
             <form id="calc-form">
                <div class='deposit-date deposit-inps'>
                   <div class='deposit-inps-text'>Дата оформления вклада</div>
-                  <div><input type="text" name="date" placeholder='дд,мм,гггг' id="datepicker"></div>
+                  <div class='input-div'><input type="text" name="date" placeholder='дд,мм,гггг' id="datepicker" class='field'></div>
                </div>
                <div class='deposit-sum deposit-inps'>
                   <div class='deposit-inps-text'>Сумма вклада</div>
-                  <div><input type="number" name="sum" id='value1'></div>
+                  <div class='input-div'><input type="number" name="sum" id='value1' class='field'></div>
                   <div class="range-slider">
                      <div id="range1"></div>
                      <div class="range-text">
@@ -89,7 +89,7 @@
                </div>
                <div class='deposit-up-sum deposit-inps'>
                   <div class='deposit-inps-text'>Сумма пополнения вклада</div>
-                  <div><input type="number" name="summadd" id='value2'></div>
+                  <div class='input-div'><input type="number" name="summadd" id='value2' class='field'></div>
                   <div class="range-slider">
                      <div id="range2"></div>
                      <div class="range-text">
